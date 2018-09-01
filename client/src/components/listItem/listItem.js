@@ -1,6 +1,5 @@
 import React, {Component} from "react"
-import DarkIcon from "../../icons/baseline-calendar_today-black-18/2x/baseline_calendar_today_black_18dp.png"
-import "./listItem.css"
+import "./ListItem.css"
 
 // Creating a component that will be a list item where the list contains items that need to be done. They will have some user entered text and an icon
 class ListItem extends Component {
@@ -11,12 +10,12 @@ class ListItem extends Component {
             <div className="listItemContainer">
                 {/* Add the icon to the div */}
                 <div className ="iconDiv">
-                    <img className="iconImg" src={DarkIcon}></img>
+                    <img className="iconImg" alt="" src={this.props.icon}></img>
                 </div>
 
                 {/* Name of the List */}
                 <div className="listName">
-                    <p className="listText">Text</p>
+                    <p className="listText">{this.props.listNameText}</p>
                 </div>
 
             </div>

@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import './components/listItem'
-import ListItem from './components/listItem';
+import SideNav from './components/SideNav'
 
 class App extends Component {
   render() {
     return (
-      <ListItem/>
+      <SideNav/>
     );
   }
 }
