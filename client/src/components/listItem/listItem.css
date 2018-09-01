@@ -1,0 +1,18 @@
+.listItemContainer {
+    width: 150px;
+}
+
+.icon {
+    float: left;
+}
+
+.iconImg {
+    height: 36px;
+    float: left;
+    margin: 2px
+}
+
+.listText {
+    font-size: 36px;
+    margin: 2px;
+}
