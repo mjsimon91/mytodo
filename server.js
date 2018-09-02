@@ -15,7 +15,7 @@ if (process.env.NODE_ENV === "production") {
 mongoose.Promise = global.Promise;
 // Connect to the Mongo DB
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/octar",
+  process.env.MONGODB_URI || "mongodb://localhost/mytodo",
 );
 
 // Send every request to the React app
