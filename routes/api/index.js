@@ -3,3 +3,5 @@ const listRoutes = require('./list')
 
 // List route
 router.use("/list", listRoutes)
+
+module.exports = router;

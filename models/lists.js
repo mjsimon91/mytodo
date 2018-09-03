@@ -13,6 +13,6 @@ const listSchema = new Schema({
     type: String
 });
 
-const List = mongoos.model('List', listSchema );
+const List = mongoose.model('List', listSchema );
 
 module.exports = List;
