@@ -1,0 +1,22 @@
+
+
+.avatar {
+    width: 300px;
+    height: 44px;
+    border-bottom: solid;
+}
+
+.userAvatar {
+    height: 36px;
+    float: left;
+    margin: 2px;
+    border-radius: 25px;
+    display: inline-block;
+}
+
+.userName {
+    font-size: 24px;
+    margin: 1px 0px 0px 4px;
+    display: inline-block;
+    padding-top: 5px;
+}

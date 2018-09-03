@@ -1,3 +1,3 @@
 module.exports = {
-    List: require('./lists')
+    List: require('./list')
 }

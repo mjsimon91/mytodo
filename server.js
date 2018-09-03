@@ -1,8 +1,9 @@
 const express = require("express");
+const bodyParser = require("body-parser");
+const mongoose = require("mongoose");
+const routes = require("./routes");
 const app = express();
-const mongoose = require('mongoose');
-const bodyParser = require('body-parser')
-const routes = require("./routes")
+
 
 const PORT = process.env.PORT || 3001;
 
@@ -18,7 +19,7 @@ app.use(routes);
 mongoose.Promise = global.Promise;
 // Connect to the Mongo DB
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/octar",
+  process.env.MONGODB_URI || "mongodb://localhost/mytodo",{ useNewUrlParser: true }
 );
 
 // Start the API server

@@ -1,5 +1,7 @@
 .listItemContainer {
-    width: 150px;
+    width: 300px;
+    padding: 10px 0px 10px 0px;
+    border-bottom: dotted;
 }
 
 .icon {
@@ -14,5 +16,5 @@
 
 .listText {
     font-size: 36px;
-    margin: 2px;
+    margin: 1px;
 }
