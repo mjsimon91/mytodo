@@ -8,9 +8,18 @@ import addListIcon from "../../icons/addListIcon/2x/baseline_add_circle_outline_
 
 class SideNav extends Component {
 
-    // state = {
-    //     toDoLists=[]
-    // }
+    state = {
+        toDoLists: []
+    }
+
+    // When a user clicks on the button to add a list, the user should be able to add a list
+    handleAddNewList = (e) => {
+        e.preventDefault();
+        this.setState({
+           toDoLists: [...this.state.toDoLists, 'New List'] 
+        })
+        console.log(this.state);  
+    }
 
     render() {
         return(
@@ -25,7 +34,9 @@ class SideNav extends Component {
                 icon = {listIcon}
                 listNameText = "To Do"
                 />
-                <button id="addList">
+                <button id="addList"
+                    onClick = {this.handleAddNewList}
+                >
                     <img id="addListIcon" src={addListIcon} alt="Add List"/>
                 </button>
             </div>
