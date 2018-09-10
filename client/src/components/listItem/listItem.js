@@ -6,19 +6,21 @@ class ListItem extends Component {
     render() {
         return(
             // Map each item to a list in the database
+            <button>
+                <div className="listItemContainer">
+                    {/* Add the icon to the div */}
+                    <div className ="iconDiv">
+                        <img className="iconImg" alt="" src={this.props.icon}></img>
+                    </div>
 
-            <div className="listItemContainer">
-                {/* Add the icon to the div */}
-                <div className ="iconDiv">
-                    <img className="iconImg" alt="" src={this.props.icon}></img>
+                    {/* Name of the List */}
+                    <div className="listName">
+                        <p className="listText">{this.props.listNameText}</p>
+                    </div>
+
                 </div>
-
-                {/* Name of the List */}
-                <div className="listName">
-                    <p className="listText">{this.props.listNameText}</p>
-                </div>
-
-            </div>
+            </button>
+            
         )
     }
 }

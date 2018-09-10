@@ -1,7 +1,6 @@
 .listItemContainer {
     width: 300px;
     padding: 10px 0px 10px 0px;
-    border-bottom: dotted;
 }
 
 .icon {
@@ -16,5 +15,20 @@
 
 .listText {
     font-size: 36px;
-    margin: 1px;
+    margin: 1px 0px 1px 1px;
+}
+
+button {
+    width: 100%;
+    background-color: transparent;
+    border: 0px;
+    margin: 0px;
+}
+
+button:hover {
+    background-color: azure;
+}
+
+button:active {
+    margin: 0px;
 }
