@@ -8,7 +8,7 @@ export default {
 
     // Add a new list
     addList: function(NewList) {
-        return axios.post("/api/list")
+        return axios.post("/api/list", NewList)
     }
 }
 
