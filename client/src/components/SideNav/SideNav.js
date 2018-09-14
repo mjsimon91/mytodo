@@ -25,10 +25,24 @@ class SideNav extends Component {
         // Post the new list to the database
         API.addList(newListVariable);
         
-        // this.setState({
-        //    toDoLists: [...this.state.toDoLists, 'New List'] 
-        // })
+        // Search the user list to add the newly added list
+        this.searchUserLists()
     }
+
+    // Search for a list of user's to do lists
+    searchUserLists = () => {
+        API.getLists()
+        .then(response => {
+            this.setState({
+                toDoLists: response.data
+            })
+        })
+        .catch(error => console.log(error))
+    }
+
+    componentDidMount() {
+        this.searchUserLists();
+    };
 
     render() {
         return(
@@ -39,10 +53,14 @@ class SideNav extends Component {
                 listNameText = "Today"   
                 >
                 </ListItem>
-                <ListItem
-                icon = {listIcon}
-                listNameText = "To Do"
-                />
+                {this.state.toDoLists.map((userList, i) =>(
+                    <ListItem
+                    key = {i}
+                    icon = {listIcon}
+                    listNameText = {userList.listName}
+                    />
+                ))}
+                
                 <button id="addList"
                     onClick = {this.handleAddNewList}
                 >
