@@ -9,9 +9,6 @@ import API from "../../utils/API"
 
 class SideNav extends Component {
 
-    state = {
-        toDoLists: []
-    }
 
     // When a user clicks on the button to add a list, the user should be able to add a list
     handleAddNewList = () => {
@@ -29,20 +26,6 @@ class SideNav extends Component {
         this.searchUserLists()
     }
 
-    // Search for a list of user's to do lists
-    searchUserLists = () => {
-        API.getLists()
-        .then(response => {
-            this.setState({
-                toDoLists: response.data
-            })
-        })
-        .catch(error => console.log(error))
-    }
-
-    componentDidMount() {
-        this.searchUserLists();
-    };
 
     render() {
         return(
@@ -53,7 +36,7 @@ class SideNav extends Component {
                 listNameText = "Today"   
                 >
                 </ListItem>
-                {this.state.toDoLists.map((userList, i) =>(
+                {this.props.toDoLists.map((userList, i) =>(
                     <ListItem
                     key = {i}
                     icon = {listIcon}
