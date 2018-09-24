@@ -29,27 +29,51 @@ class SideNav extends Component {
 
     render() {
         return(
-            <div className = "leftNav">
-                <Avatar/>
-                <ListItem 
-                icon = {calendarIcon}
-                listNameText = "Today"   
-                >
-                </ListItem>
-                {this.props.toDoLists.map((userList, i) =>(
-                    <ListItem
-                    key = {i}
-                    icon = {listIcon}
-                    listNameText = {userList.listName}
-                    />
-                ))}
-                
-                <button id="addList"
-                    onClick = {this.handleAddNewList}
-                >
-                    <img id="addListIcon" src={addListIcon} alt="Add List"/>
-                </button>
-            </div>
+            
+                <div className = "leftNav col-2">
+                    
+                    <div className = "row">
+                        <Avatar
+                        />
+                    </div>
+                    
+                    <div className ="row">
+                        <ListItem 
+                        icon = {calendarIcon}
+                        listNameText = "Today"   
+                        >
+                        </ListItem>
+                    </div>
+
+                    <div className = "row">
+                        {this.props.toDoLists.map((userList, i) =>(
+                            <ListItem
+                            key = {i}
+                            icon = {listIcon}
+                            listNameText = {userList.listName}
+                            />
+                        ))}
+                    </div>
+
+                    <div className ="row">
+                        <div className="col-12 addNew">
+                            <button id="addList"
+                                onClick = {this.handleAddNewList}
+                            >
+                                <img id="addListIcon" src={addListIcon} alt="Add List"/>
+                            </button>
+                        </div>
+                        
+                    </div>
+                   
+                        
+                        
+                        
+                  
+                    
+                </div>
+            
+            
         )
     }
 }

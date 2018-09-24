@@ -1,14 +1,11 @@
 
 
 .avatar {
-    width: 300px;
     height: 44px;
     border-bottom: solid;
 }
 
 .userAvatar {
-    height: 36px;
-    float: left;
     margin: 2px;
     border-radius: 25px;
     display: inline-block;

@@ -5,15 +5,18 @@ import "./Avatar.css"
 class Avatar extends Component {
     render(){
         return(
-            <div className="avatar">
-                <div className = "avatarDiv">
-                    <img className="userAvatar" alt="" src="https://via.placeholder.com/32x32"></img>
+            <div className="row">
+                <div className="avatar col-12">
+                    <div className = "avatarDiv">
+                        <img className="userAvatar col-1" alt="" src="https://via.placeholder.com/32x32"></img>
+                    </div>
+                    <div className="userNameDiv col-10">
+                        <h3 className="userName">Matthew Simon</h3>
+                    </div>
+                    
                 </div>
-                <div className="userNameDiv">
-                    <h3 className="userName">Matthew Simon</h3>
-                </div>
-                
             </div>
+            
         )
     }  
 }

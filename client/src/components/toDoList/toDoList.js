@@ -6,8 +6,12 @@ import ListHeader from '../ListHeader'
 class toDoList extends Component {
     render(){
         return(
-            <div>
-                <ListHeader/>
+            <div className="toDoList">
+                <div className="row">
+                    <div className = "col-12">
+                        <ListHeader/>
+                    </div>
+                </div>    
             </div>
         )
     }

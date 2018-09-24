@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import SideNav from './components/SideNav'
-import ToDoList from './components/ListHeader'
+import ToDoList from './components/ToDoList'
 import API from "./utils/API"
 
 
@@ -28,11 +28,14 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="row">
         <SideNav
+          className = 'sideNavComponent'
           toDoLists = {this.state.toDoLists}
         />
+                  
         <ToDoList
+          className = "toDoList col-10"
           listName = {this.state.toDoLists}
         />
       </div> 

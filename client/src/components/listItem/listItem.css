@@ -1,6 +1,6 @@
 .listItemContainer {
-    width: 300px;
     padding: 10px 0px 10px 0px;
+    text-align: left;
 }
 
 .icon {
@@ -8,8 +8,6 @@
 }
 
 .iconImg {
-    height: 36px;
-    float: left;
     margin: 2px
 }
 
@@ -19,7 +17,6 @@
 }
 
 button {
-    width: 100%;
     background-color: transparent;
     border: 0px;
     margin: 0px;

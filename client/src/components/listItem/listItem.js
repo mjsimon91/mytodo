@@ -5,21 +5,24 @@ import "./ListItem.css"
 class ListItem extends Component {
     render() {
         return(
-            // Map each item to a list in the database
-            <button>
-                <div className="listItemContainer">
-                    {/* Add the icon to the div */}
-                    <div className ="iconDiv">
-                        <img className="iconImg" alt="" src={this.props.icon}></img>
-                    </div>
+            <div className="row">
+                {/* Map each item to a list in the database */}
+                <button className="col-12">
+                    <div className="listItemContainer">
+                        {/* Add the icon to the div */}
+                        <div className ="iconDiv col-1">
+                            <img className="iconImg" alt="" src={this.props.icon}></img>
+                        </div>
 
-                    {/* Name of the List */}
-                    <div className="listName">
-                        <p className="listText">{this.props.listNameText}</p>
-                    </div>
+                        {/* Name of the List */}
+                        <div className="listName col-10">
+                            <p className="listText">{this.props.listNameText}</p>
+                        </div>
 
-                </div>
-            </button>
+                    </div>
+                </button>
+            </div>
+            
             
         )
     }
