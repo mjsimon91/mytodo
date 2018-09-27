@@ -7,15 +7,15 @@ class ListItem extends Component {
         return(
             <div className="row">
                 {/* Map each item to a list in the database */}
-                <button className="col-12">
+                <button className="col-12-xl">
                     <div className="listItemContainer">
                         {/* Add the icon to the div */}
-                        <div className ="iconDiv col-1">
+                        <div className ="iconDiv col-1-xl">
                             <img className="iconImg" alt="" src={this.props.icon}></img>
                         </div>
 
                         {/* Name of the List */}
-                        <div className="listName col-10">
+                        <div className="listName">
                             <p className="listText">{this.props.listNameText}</p>
                         </div>
 

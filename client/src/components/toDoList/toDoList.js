@@ -8,7 +8,7 @@ class toDoList extends Component {
         return(
             <div className="toDoList">
                 <div className="row">
-                    <div className = "col-12">
+                    <div className = "col-12-xl">
                         <ListHeader/>
                     </div>
                 </div>    

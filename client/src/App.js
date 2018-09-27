@@ -35,7 +35,7 @@ class App extends Component {
         />
                   
         <ToDoList
-          className = "toDoList col-10"
+          className = "toDoList col-10-xl"
           listName = {this.state.toDoLists}
         />
       </div> 

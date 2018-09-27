@@ -1,19 +1,21 @@
 
 
 .avatar {
-    height: 44px;
     border-bottom: solid;
+    margin-left: 0px;
 }
 
 .userAvatar {
     margin: 2px;
     border-radius: 25px;
-    display: inline-block;
+    width: 32px;
 }
 
 .userName {
     font-size: 24px;
     margin: 1px 0px 0px 4px;
-    display: inline-block;
-    padding-top: 5px;
+}
+
+.userNameDiv {
+    text-align: center;
 }
